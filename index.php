@@ -1,5 +1,9 @@
 <?php include "head.php"?>
 
-<h1>Index</h1>
+<div class="container">
+    <div class="cold-md-12 row" id="resultados">
+    </div>
+</div>
 
+<script src="js/main.js"></script>
 <?php include "footer.php"?>
