@@ -40,3 +40,29 @@
 .colorNav{
     background-color: rgb(46, 221, 99);
 }
+
+.footerPokemon{
+    margin-top: 8em;
+    padding-top: 3em;
+    background-color: rgb(152, 255, 126);
+    padding-bottom: 5em;
+    position:fixed;
+    left:0%;
+    bottom:0px;
+    height:30px;
+    width:100%;
+}
+
+.textFooter{
+    margin-left: 3em;
+}
+
+#colorP2{
+    color: black;
+    font-style: oblique;
+    
+}
+
+.colorBoton{
+    background-color: rgb(105, 238, 145);
+}

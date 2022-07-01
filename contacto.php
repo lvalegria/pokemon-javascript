@@ -32,7 +32,7 @@
             </div>
 
             <div class="formButon ">
-                <button class="btn btn-primary" type="submit" id="envio">Enviar</button>
+                <button class="btn colorBoton" type="submit" id="envio">Enviar</button>
             </div>
 
         </div>
