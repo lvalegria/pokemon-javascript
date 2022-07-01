@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row pokemonPerfil mt-4">
         <div class="col-md-4 imgContentPok">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png" alt="" srcset="" id="imgPok" class="mx-auto d-block">
+            <img src="" alt="" srcset="" id="imgPok" class="mx-auto d-block">
 
         </div>
 

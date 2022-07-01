@@ -1,3 +1,14 @@
 .pokemonPerfil img{
     width: 100%;
 }
+
+.imgContentPok{
+    background: black;
+    border: 23px solid gray;
+    border-radius: 50%;
+}
+
+.pokemonPerfil{
+    background: #d5d5d56e;
+    padding: 46px;
+}
