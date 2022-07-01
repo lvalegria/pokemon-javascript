@@ -9,8 +9,11 @@ var validImages=[];
 fetch("https://pokeapi.co/api/v2/pokemon/" + id + "/")
     .then((data) => data.json())
     .then((data) => {
-        //console.info(data)
+        console.info(data)
+        document.getElementById("name").innerText=data.name.toUpperCase();
         buildSpritesPok(data.sprites);//informacion de sprites
+        buildAbilities(data.abilities);
+        buildTypes(data.types);
     });
 
 
@@ -37,7 +40,7 @@ function viewSpritesPok(){
     var flag=0;
     setInterval(function(){
         contentImage.setAttribute('src',validImages[flag]);
-        console.info(flag);
+        
         if(flag===validImages.length-1){
             flag=0;
         }else{
@@ -45,4 +48,30 @@ function viewSpritesPok(){
         }
 
     },1000)
+}
+
+function buildAbilities(abilities){
+    let text="<ul>";
+    abilities.forEach((ability,i) => {
+        text+="<li>"+ability.ability.name.toUpperCase()+":<a href='"+ ability.ability.url +"'target='_BLANK'>Ver más...</li>";
+        console.log(ability.ability.name);//muestra info en consola
+        
+    })
+    text+="</lu>"
+    console.info(text);
+    document.getElementById("abilities").innerHTML=text;
+
+}
+
+function buildTypes(Types){
+    let text="<ul>";
+    Types.forEach((type,i) => {
+        text+="<li>"+type.type.name.toUpperCase()+":<a href='"+ type.type.url +"'target='_BLANK'>Ver más...</li>";
+        //console.log(Type.Type.name);//muestra info en consola
+        
+    })
+    text+="</lu>"
+    console.info(text);
+    document.getElementById("types").innerHTML=text;
+
 }

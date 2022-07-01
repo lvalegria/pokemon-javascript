@@ -1,6 +1,5 @@
 <?php include "head.php"?>
 
-<h1>perfil</h1>
 <div class="container">
     <div class="row pokemonPerfil mt-4">
         <div class="col-md-4 imgContentPok">
@@ -10,10 +9,45 @@
 
         <div class="col-md-8">
 
+            <div class="mt-4 p-5 colornom text-white rounded">
+                <h1 id="name">Jumbotron Example</h1>
+                
+            </div>
+
+
+            <div id="accordion">
+
+                <div class="card">
+                    <div class="card-header">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                            <strong>Habilidades</strong>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                        <div class="card-body" id="abilities">
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                            <strong>Tipos</strong>
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body" id="types">
+                        
+                        </div>
+                    </div>
+                </div>
+             
+
+            </div>
+
         </div>
-
     </div>
-
 </div>
 
 <script src="js/perfil.js"></script>

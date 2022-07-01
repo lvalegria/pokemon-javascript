@@ -6,4 +6,4 @@
 </div>
 
 <script src="js/main.js"></script>
-<?php include "footer.php"?>
+
