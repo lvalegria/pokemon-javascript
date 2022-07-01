@@ -1,3 +1,7 @@
+
+codigo de perfil en caso de problemas
+
+
 "user strict";
 
 //console.info(window.location.search);
