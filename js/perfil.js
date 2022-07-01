@@ -9,6 +9,7 @@ var validImages=[];
 fetch("https://pokeapi.co/api/v2/pokemon/" + id + "/")
     .then((data) => data.json())
     .then((data) => {
+        //console.info(data)
         buildSpritesPok(data.sprites);//informacion de sprites
     });
 
@@ -27,6 +28,21 @@ function buildSpritesPok(images){
         }
         
     }
-    console.info(validImages);
+    //console.info(validImages);
+    viewSpritesPok()
 
+}
+
+function viewSpritesPok(){
+    var flag=0;
+    setInterval(function(){
+        contentImage.setAttribute('src',validImages[flag]);
+        console.info(flag);
+        if(flag===validImages.length-1){
+            flag=0;
+        }else{
+            flag+=1;
+        }
+
+    },1000)
 }
